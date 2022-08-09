@@ -63,6 +63,7 @@
 .aboutPage {
     font-size: 18px;
     margin:30px;
+
 }
 .vacation {
     width:100%;
@@ -81,7 +82,7 @@
     height: auto;
     align-self: center;
     margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 600px;
 }
 .straightLine {
     display:flex;
@@ -98,5 +99,28 @@
 }
 .titleFooter {
     font-size: 40px;
+    margin-top: 100px;
+}
+.projectsLogo {
+    width:95%;
+    height:auto;
+    align-self:center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin:30px;
+}
+.flexContainer {
+    display:inline-block;
+    align-items: center;
+    justify-content: space-between;
+    margin:30px;
+
+}
+.canDoC {
+    display:flex;
+}
+.mobileCanDo {
+    display: flex;
+    margin: 30px;
     margin-top: 100px;
 }
