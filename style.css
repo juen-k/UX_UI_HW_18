@@ -84,18 +84,19 @@
     margin-top: 50px;
     margin-bottom: 600px;
 }
-.straightLine {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
+#straightLine {
+    width: 100%;
     height:100%;
 }
 
 .socialMedia {
-    margin-left: 80%; 
-    margin-top:0% ;
+    margin-top:0%;
+    display: flex;
+}
+.footerContainer {
+    justify-content: space-between;
     margin-bottom: 100px;
+    align-items: center;
 }
 .titleFooter {
     font-size: 40px;
@@ -110,12 +111,7 @@
     margin:30px;
 }
 .flexContainer {
-    display:inline-block;
-    align-items: center;
-    justify-content: space-between;
-    margin:70px;
-    margin-bottom:5%;
-
+    display:flex;
 }
 .canDoC {
     float:right;
@@ -124,6 +120,7 @@
     text-align: center;
     padding: 30px;
     margin-top: 10%;
+    font-size: 18px;
 }
 .mobileCanDo {
     margin: 30px;
@@ -141,12 +138,27 @@
     font-size: 14px;
 }
 .mnArts {
-    float:right;
+   /* float:right;
     width:70%;
     height: 20px;
     text-align: center;
     padding: 30px;
+    margin-top: 0%;
+    margin:30px; 
+    font-size:18px; */
+    float: right;
+    width: 70%;
+    height: 20px;
+    text-align: center;
+    padding: 30px;
     margin-top: 10%;
+    margin: 30px;
+    font-size: 18px;
+}
+.mobileMN {
+    margin: 30px;
+    margin-top: 100px;
+    width:20%;
 }
 .comingSoon {
     width:60%;
@@ -156,38 +168,150 @@
     margin-bottom: 600px;
     margin:400px;
 }
+.contactPage {
+display: flex;
+}
 .contactLogo {
-float: left;
 width: 50%;
 margin: 30px;
 }
 #intro {
-    float: right 30%;
     font-size: 24px;
-    margin-bottom: 20%;
-    margin-top: 40%;
+    margin-bottom: 10%;
+    margin-top: 20%;
+    text-align: center;
 }
 .contact {
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.buttonContainer {
+    display: flex;
+    align-items: center;
 }
 .mediaButton {
     text-align: center;
-    display:inline-block;
     background-color:#3C6386;
     color: white;
-    width: 10%;
-    height:auto;
+    /*padding: 10px;*/
     font-size: 14px;
+    margin: 30px;
+
 }
 
-@media only screen and (max-width:600px) { 
-    .flexContainter {
-        display:column;
-        width:100%;
+/* @media  (min-width:600px) { 
+    .header {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .headshot {
+        flex-direction:column;
+        width: 200px;
+        height:auto;
+    }
+    .vacation {
+        width: 150px;
+    }
+    .projectsLogo {
+        flex-direction: column;
+        width: 85%;
+    }
+    .comingSoon {
+        width:85%;
+        margin: 30px;
+    }
+    .arrowDown {
+        flex-direction: column;
     }
     .canDoC {
-        grid-template-areas: ;
+        width:50%;
+    }
+    .mobileCanDo {
+
+    }
+    .mobileMN {
+
+    }
+    .mnArts {
+        float:right;
+    }
+    .contactPage {
+        flex-direction: column;
+    }
+    .contactLogo {
+        width: 85%;
+    }
+    .flexContainer {
+        flex-direction: column;
     }
 
+}*/
+@media (max-width:600px) {
+    body {
+        /*width: 50%;
+        height:auto;*/
+        margin:8px;
+}
+.projectsLogo {
+    width:90%;
+}
+.canDoC {
+    float:none;
+    flex-direction: column;
+    margin:10%;
+}
+.mobileCanDo {
+    width:40%;
+    margin-left:30%;
+}
+.mobileMN {
+    width:40%;
+    margin-left:30%;
+}
+.mnArts {
+    flex-direction: column;
+    float:none;
+}
+.comingSoon {
+    margin:100px;
+    width:70%;
+    margin-top: 10%;
+}
+.titleHeader {
+    text-align: center;
+}
+.button {
+    flex-direction: column;
+    display: block;
+    width: 30%;
+    /*align-items: center;*/
+    margin-left: 35%;
+}
+/*.flexContainer {
+    flex-direction: column;
+}*/
+.socialMedia {
+    width:40%;
+    /*height:auto;*/
+    margin:4px;
+    flex-direction: column;
+}
+/*.footerContainer {
+    display:block;
+}*/
+.contactPage {
+    flex-direction: column;
+}
+.contactLogo {
+    width: 85%;
+}
+.arrowDown {
+    flex-direction: column;
+    margin-top: 60%;
+    margin-bottom: 60%;
+}
 }
